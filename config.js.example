@@ -1,0 +1,10 @@
+config = {
+  convertkit: {
+    api: {
+      secret: 'somekey',
+      url: 'https://api.convertkit.com/v3/'
+    }
+  }
+}
+
+module.exports = config

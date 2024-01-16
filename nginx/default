@@ -1,0 +1,11 @@
+server {
+  listen 80;
+#  listen 443 ssl;
+#  ssl_certificate /etc/letsencrypt/live/scanyourentirelife/cert.pem;
+#  ssl_certificate_key /etc/letsencrypt/live/scanyourentirelife/privkey.pem;
+  server_name api.scanyourentirelife.com;
+  location / {
+#    proxy_pass http://convertkit_adapter_1:9095;
+    include /etc/nginx/proxy_params;
+  }
+}
